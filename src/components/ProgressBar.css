@@ -1,0 +1,37 @@
+.progress{
+    background-color: whitesmoke;
+    height: 2rem;
+    width: 40rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress span{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 0.1rem;
+}
+
+.fill-color{
+    background-color: #00c251;
+    height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .progress{
+        width: 30rem;
+    }
+}
+
+@media screen and (min-width: 310px) and (max-width: 700px){
+    .progress{
+        width: 20rem;
+    }
+}
